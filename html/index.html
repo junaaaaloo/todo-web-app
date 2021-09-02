@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- META INFORMATION -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> ToDos List </title>
+
+  <!-- Libraries -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js" integrity="sha512-dqw6X88iGgZlTsONxZK9ePmJEFrmHwpuMrsUChjAw1mRUhUITE5QU9pkcSox+ynfLhL15Sv2al5A0LVyDCmtUw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <!-- Style Modules -->
+  <link rel="stylesheet" href="static/index.css">
+
+</head>
+<body>
+  <div id="background">
+    <span class="background-text"> what i need to do </span>
+  </div>
+  <div id="content" class="ui container">
+    <div id="card-todo" class="ui card">
+      <div class="content">
+        <div class="header">
+          ToDo List
+        </div>
+        <div class="meta">
+          <span class="category"> what have you done today? </span>
+        </div>
+        <hr>
+        <div class="todo-list"> </div>
+        <div class="todo-item new-item">
+          <div class="checkbox">
+            <input id="newTodoCheckbox" type="checkbox"/>
+          </div>
+          <div class="content">
+            <input id="newTodoTextfield" type="text"/>
+          </div>
+          <button class="ui button green" onclick="onAdd()"> + </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+<!-- Javascript Modules -->
+<script src="static/todos.js"></script>
+<script src="static/index.js"></script>
+
+</html>
